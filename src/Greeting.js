@@ -10,13 +10,13 @@ const Greeting = () => {
     if (!greeting) {
       dispatch(fetchMessage())
         .then(() => {
-          
+          {greeting}
         })
         .catch((error) => {
-          
+          (error)
         });
     }
-  }, [dispatch]);
+  },{greeting} [dispatch]);
 
   return (
     <div>
