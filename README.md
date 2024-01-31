@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hello-React-Frontend
 
 <a name="readme-top"></a>
@@ -132,3 +133,7 @@ I want to thank  Microverse
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+# hello-react-front-end
+This is the frontend of my hello app
+>>>>>>> dev
