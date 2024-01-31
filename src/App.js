@@ -3,9 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import Greeting from './Greeting';
 
 const App = () => (
-  <Routes>
-    <Route path='/' element={<Greeting />}></Route>
-  </Routes>
+  <Router>
+    <Route path="/" element={<Greeting />}></Route>
+  </Router>
 );
 
 export default App;
