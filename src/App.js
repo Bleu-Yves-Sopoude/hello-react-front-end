@@ -4,7 +4,11 @@ import Greeting from './Greeting';
 
 const App = () => (
   <Router>
-    <Route path="/" element={<Greeting />}></Route>
+    <Routes>
+
+      <Route path="/" element={<Greeting />} />
+
+    </Routes>
   </Router>
 );
 
