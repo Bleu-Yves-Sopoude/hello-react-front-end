@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchMessage } from './redux/features/greetingsSlice';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMessage } from "./redux/features/greetingsSlice";
 
 const Greeting = () => {
   const dispatch = useDispatch();
@@ -10,13 +10,14 @@ const Greeting = () => {
     if (!greeting) {
       dispatch(fetchMessage())
         .then(() => {
-          {greeting}
+          state.message = action.payload;
         })
         .catch((error) => {
-          (error)
+          state.message = "";
+          state.error = action.error.message;
         });
     }
-  },{greeting} [dispatch]);
+  }, { greeting }[dispatch]);
 
   return (
     <div>
